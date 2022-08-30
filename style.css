@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* ------------------ Variables ------------------- */
+
+:root {
+    /* Font family */
+    --font-Space-Mono : 'Space Mono', monospace;
+    --font-inconsolata : 'Inconsolata', monospace;
+    --font-monte : 'Montserrat', sans-serif;
+
+    /* Colors */
+
+    --text-dark : #333333;
+    --text-light-dark : #4f4f4f;
+
+
+    /* Font size */
+
+    --text-sm : 1rem;
+    --text-md : 1.5rem;
+    --text-lg : 4rem;
+
+    /* Images */
+
+    --bg-image : url('./assets/Scarecrow.png');
+
+
+
+
+}
+
+/* ------------------ /Variables ------------------- */
+
+
+/* ------------------ Global Classes ------------------- */
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-light-dark {
+    color: var(--text-light-dark);
+}
+
+.font-SpaceMono {
+    font-family: var(--font-Space-Mono);
+}
+
+.font-inconso {
+    font-family: var(--font-inconsolata);
+}
+
+.font-monte {
+    font-family: var(--font-monte);
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-block {
+    display: block;
+}
+
+/* ------------------ /Global Classes ------------------- */
+
+
+/* ------------------ Main Section Style ------------------- */
+
+    
+#site-main {
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+
+.logo-text {
+    margin-left: 4.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.image1 {
+    width: 50%;
+}
+
+.image1 img {
+    padding: 1.5rem 2rem;
+    width: 75%;
+    margin-left: 5rem;
+}
+
+.news {
+    text-align: left;
+    margin-left: 5rem;
+}
+
+
+.btn {
+    background-color: var(--text-dark);
+    padding: 1.5rem 2.5rem;
+    color: #ffffff;
+    margin-top: 50px;
+
+}
+
+footer p {
+    font-family: var(--font-monte);
+    font-size: 14px;
+    text-align: center;
+    color:#BDBDBD;
+    font-weight: 400;
+
+}
+
+footer p a {
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+/* ------------------ /Main Section Style ------------------- */
+
+
+
+
+/* ---------------------- Media Query Style --------------------- */
+
+/* for large screen sm (640px) */
+@media (max-width: 640px) {
+
+    #site-main {
+        margin-top: 5rem;
+        margin-bottom: 15rem;
+    }
+    
+
+
+    .container{
+        max-width: 640px;
+    }
+
+
+    .mobile {
+        display: block;
+    }
+
+
+    .logo-text {
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+    }
+
+ 
+    .image1 {
+        width: 100%;
+    }
+
+    .image1 img {
+        padding: 0;
+        width: 80%;
+        margin-left: 2.5rem;
+    }
+
+    .news {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .news span.d-block {
+        display: inline;
+    }
+
+    .m-text-lg{
+        font-size: 3rem;
+    }
+
+    .m-text-sm {
+        font-size: 1.2rem;
+    }
+   
+}
